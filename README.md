@@ -20,4 +20,6 @@ pip install -r requirements.txt
 3. 点击网络 --> 文档 --> 标头,然后向下滚动至“请求标头”
 4. 复制 "Cooke: " 后的那一串字符，如“__utmc=208515845; __utmz=208515845.1648xxx”
 如图所示
-[get-cookie](./imgs/get-cookie.png)
+
+
+[get-cookie](https://github.com/FingerLiu/fanfou-exporter/blob/main/imgs/get-cookie.png?raw=true)
