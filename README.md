@@ -1,5 +1,7 @@
 # fanfou-exporter
+![demo](https://raw.githubusercontent.com/FingerLiu/fanfou-exporter/main/imgs/preview.png)
 
+## 使用方法
 使用浏览器 cookie 将饭否时间线导出至 Excel 文件。
 
 ```bash
