@@ -22,4 +22,4 @@ pip install -r requirements.txt
 如图所示
 
 
-[get-cookie](https://github.com/FingerLiu/fanfou-exporter/blob/main/imgs/get-cookie.png?raw=true)
+[get-cookie](https://raw.githubusercontent.com/FingerLiu/fanfou-exporter/main/imgs/get-cookie.png)
