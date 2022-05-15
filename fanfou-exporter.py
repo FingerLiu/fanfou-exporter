@@ -20,6 +20,7 @@ parser = argparse.ArgumentParser(description='Export users timeline using your b
 parser.add_argument('--homepage', default=default_homepage_url)
 parser.add_argument('--cookie', default=default_cookie)
 parser.add_argument('--filepath', default='')
+parser.add_argument('--start_page', default=1, type=int)
 args = parser.parse_args()
 
 name = args.homepage.strip('/').split('/')[-1]
@@ -83,7 +84,7 @@ with xlsxwriter.Workbook(filepath) as workbook:
     count = int(soup.find_all('ul', attrs={'class': 'paginator'})[0].find_all()[-1]['href'].split('.')[-1])
 
     # 遍历并写到文件
-    for i in range(1, count + 1):
+    for i in range(args.start_page, count + 1):
         print("scrap page {}".format(i))
         url = "{}/p.{}".format(args.homepage.strip("/"), i)
         r = session.get(url)
@@ -108,7 +109,7 @@ with xlsxwriter.Workbook(filepath) as workbook:
             data.append(d)
         pprint.pprint(data)
 
-        print("start write page {} to xlsx {}".format(i, filepath))
+        print("start write page {}/{} to xlsx {}".format(i, count, filepath))
         for d in data:
             worksheet.write(row, 0, d['datetime'])
             worksheet.write(row, 1, d['content'])
