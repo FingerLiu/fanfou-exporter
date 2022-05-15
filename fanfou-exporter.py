@@ -14,7 +14,7 @@ import random
 from io import BytesIO
 
 default_homepage_url = "https://fanfou.com/bitcher"
-default_cookie = "__utmc=208515845; __utmz=208515845.1648721440.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); uuid=3871ebcd18210725350e.1648721427.5; PHPSESSID=34jnkrgis2st4fg6jmlo514bp0; __utma=208515845.1228288682.1648721440.1651720913.1652595915.14; __utmv=208515845.self; msg=%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%8A%A8%E7%89%A9%E8%83%BD%E5%90%AC%E6%87%82%E2%80%9C%E6%8A%8A%E7%8B%97%E7%BB%B3%E5%8F%BC%E8%BF%87%E6%9D%A5%E2%80%9D%E5%91%A2%EF%BC%8C%E7%9C%9F%E7%A5%9E%E5%A5%87%E3%80%82; __utmt=1; __utmb=208515845.46.10.1652595915"
+default_cookie = "__utmc=208515845........."
 
 parser = argparse.ArgumentParser(description='Export users timeline using your browser cookie.')
 parser.add_argument('--homepage', default=default_homepage_url)
